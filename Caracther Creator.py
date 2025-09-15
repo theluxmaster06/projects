@@ -42,45 +42,10 @@ while selected == False:
 print("race:", race_choice)
 print("class", class_choice)
 
-if class_choice == "monk":
-    print("---monk---")
+print ("---{class_choice}---")
 
-elif class_choice == "bard":
-    print("---bard---")
 
-elif class_choice == "cleric":
-    print("---cleric---")
-
-elif class_choice == "druid":
-    print("---druid---")
-
-elif class_choice == "fighter":
-    print("---fighter---")
-
-elif class_choice == "paladin":
-    print("---paladin---")
-
-elif class_choice == "ranger":
-    print("---ranger---")
-
-elif class_choice == "rouge":
-    print("---rouge---")
-
-elif class_choice == "sorcerer":
-    print("---sorcerer---")
-
-elif class_choice == "warlock":
-    print("---warlock---")
-
-elif class_choice == "wizard":
-    print("---wizard---")   
-
-elif class_choice == "barbarian":
-    print("---barbarian---")
-
-else:
-    print("choosen class not found")
-
+# stat point buy calculator
 print("time to choose your stats")
 
 point = 27
@@ -117,6 +82,8 @@ print("you have spent all your points")
 for stat, value in stats.items():
     print(stat, ":", value) 
 
+
+# stat bonus for races
 if race_choice == "human":
     stats["strength"] += 1
     stats["dexterity"] += 1
@@ -194,9 +161,14 @@ elif race_choice == "orc":
 else:
     print("ur race does not have any stat bonuses")
 
+
+# hitpoint calculator based on class
 if class_choice == "barbarian":
     hit_points = 12 + (stats["constitution"] - 10) // 2
+    # based on wiki dot 5e this is how u calculate hitpoints
     print("as a barbarian you have", hit_points, "hit points")
+
+
 
 elif class_choice == "bard":
     hit_points = 8 + (stats["constitution"] - 10) // 2
@@ -245,6 +217,9 @@ elif class_choice == "wizard":
 else:
     print("ur class does not have any hit points")
 
+
+# quick caracther summary so u dont get overwhelemed
+
 print( )
 print( )
 print("-----Caracther Summary-----")
@@ -275,6 +250,9 @@ if class_choice == "barbarian":
     else:
         print("you have chosen a", simple_weapon_choice)
     print("you also get an explorer's pack and four javelins")
+
+if class_choice == "bard":
+    print("as a bard you can choose")
 
 else:
     print("equipment for this class is not yet implemented")

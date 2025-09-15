@@ -1,19 +1,18 @@
 money = int(input("Enter the amount of money you have: "))
+while True:
 
-if money < 0:
-    print("Invalid amount. Money cannot be negative.")  
-    exit()  
-elif money == 0:
-    print("You have no money to gamble with.")
-    exit()                                          
+ if money <= 0:
+    print("Invalid amount. Money cannot be zero or negative.")  
+    exit()                                           
 
-elif money > 1000000000: 
+
+ elif money > 1000000000: 
     print("You have too much money to gamble. The maximum allowed is 1,000,000,000.")
     exit()  
-elif money < 10:
+ elif money < 10:
     print("You need at least 10 to gamble.")
     exit()
-elif money >= 10:
+ elif money >= 10:
     print("You have", money, "to gamble with.")
     bet = int(input("Enter the amount you want to bet (minimum 10): "))
     if bet < 10:
