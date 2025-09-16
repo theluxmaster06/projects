@@ -1,3 +1,5 @@
+#-----------[race selection]-----------------
+
 race_list = ["human", "elf", "dwarf", "tiefling", "aasimar", "dragonborn", "gnome", "halfling", "goliath", "orc", "skip"]
 
 print("-----DnD Caracther Creator-----")
@@ -17,6 +19,8 @@ while selected == False:
         selected = True
     else:
         print("You have to choose a valid race.")
+
+#-----------[class selection]-----------------
 
 class_list = ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard", "skip"]
 
@@ -44,6 +48,7 @@ print("class", class_choice)
 
 print("---{race_choice}---")
 
+#-----------[stat allocation]-----------------
 
 print("time to choose your stats")
 
@@ -78,8 +83,12 @@ while point > 0:
     else:
         print("that is not a valid stat")
 print("you have spent all your points")
-for stat, value in stats.items():
-    print(stat, ":", value) 
+
+#---------------------------------------------
+
+print("time to apply racial stat bonuses")
+
+#-----------[racial stat bonuses]-----------------
 
 if race_choice == "human":
     stats["strength"] += 1
@@ -89,75 +98,77 @@ if race_choice == "human":
     stats["wisdom"] += 1
     stats["charisma"] += 1
     print("as a human you get +1 to all stats")
-    for stat, value in stats.items():
-        print(stat, ":", value)     
+
+#---------------------------------------------
 
 elif race_choice == "elf":
     stats["dexterity"] += 2
     stats["intelligence"] += 1
     print("as an elf you get +2 dexterity and +1 intelligence")
-    for stat, value in stats.items():
-        print(stat, ":", value) 
+
+#---------------------------------------------
 
 elif race_choice == "dwarf":
     stats["constitution"] += 2
     stats["wisdom"] += 1
     print("as a dwarf you get +2 constitution and +1 wisdom")
-    for stat, value in stats.items():
-        print(stat, ":", value) 
+
+#---------------------------------------------
 
 elif race_choice == "tiefling":
     stats["intelligence"] += 1
     stats["charisma"] += 2
     print("as a tiefling you get +1 intelligence and +2 charisma")
-    for stat, value in stats.items():
-        print(stat, ":", value) 
+
+#---------------------------------------------
 
 elif race_choice == "aasimar":
     stats["wisdom"] += 1
     stats["charisma"] += 2
     print("as an aasimar you get +1 wisdom and +2 charisma")
-    for stat, value in stats.items():
-        print(stat, ":", value) 
+
+#---------------------------------------------
 
 elif race_choice == "dragonborn":
     stats["strength"] += 2
     stats["charisma"] += 1
     print("as a dragonborn you get +2 strength and +1 charisma")
-    for stat, value in stats.items():
-        print(stat, ":", value) 
+
+#---------------------------------------------
 
 elif race_choice == "gnome":
     stats["intelligence"] += 2
     stats["dexterity"] += 1
     print("as a gnome you get +2 intelligence and +1 dexterity")
-    for stat, value in stats.items():
-        print(stat, ":", value)
+
+#---------------------------------------------    
 
 elif race_choice == "halfling":
     stats["dexterity"] += 2
     stats["charisma"] += 1
     print("as a halfling you get +2 dexterity and +1 charisma")
-    for stat, value in stats.items():
-        print(stat, ":", value)
+
+#---------------------------------------------
 
 elif race_choice == "goliath":
     stats["strength"] += 2
     stats["constitution"] += 1
     print("as a goliath you get +2 strength and +1 constitution")
-    for stat, value in stats.items():
-        print(stat, ":", value)
+
+#---------------------------------------------
 
 elif race_choice == "orc":
     stats["strength"] += 2
     stats["constitution"] += 1
     print("as an orc you get +2 strength and +1 constitution")
-    for stat, value in stats.items():
-        print(stat, ":", value)
+
+#---------------------------------------------
 
 else:
     print("ur race does not have any stat bonuses")
 
+for stat, value in stats.items():
+        print(stat, ":", value)
 
 # -------------[hitpoints]-----------------
 print("time to calculate your hit points")
@@ -649,3 +660,30 @@ print("-----End of Summary-----")
 print("good luck on your adventures!")
 
 #------------------------------------------------------------------------------------
+
+# inspiration from:DnD Beyond, Roll20, GitHub Copilot, ChatGPT, Stack Overflow, and vai-tv
+
+#---------------------------------------------
+
+
+
+# thanks for looking at my code!
+
+# if you have any suggestions for improvements, please let me know!
+
+
+
+
+# thanks vai-tv <3 for helping me with making the code better!
+
+
+
+
+# thanks to GitHub Copilot for helping me with some parts of the code!
+
+# thanks to DnD Beyond and Roll20 for helping me with the rules and stuff!
+
+
+# thanks to ChatGPT for helping me with some parts of the structure!
+
+# thanks to Stack Overflow for helping me with some parts of the code!
