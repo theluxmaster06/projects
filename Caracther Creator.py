@@ -240,5 +240,308 @@ if class_choice == "barbarian":
         print("you have chosen a", simple_weapon_choice)
     print("you also get an explorer's pack and four javelins")
 
+#------------------------------------------------------------------------------------
+
+elif class_choice == "bard":
+    print("as a bard you can choose between a rapier, a longsword, or any simple weapon")
+    print("you also get a diplomat's pack or an entertainer's pack")
+    print("you also get a lute and leather armor and a dagger")
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "rapier":
+        print("you have chosen a rapier")
+    elif weapon_choice == "longsword":
+        print("you have chosen a longsword")
+    else:
+        print("you have chosen a", weapon_choice)
+    pack_choice = input("which pack do you want: ").lower()
+    if pack_choice == "diplomat's pack":
+        print("you have chosen a diplomat's pack")
+    elif pack_choice == "entertainer's pack":
+        print("you have chosen an entertainer's pack")
+    else:
+        print("you have chosen a", pack_choice)
+    print("you also get a lute, leather armor, and a dagger")
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "cleric":
+    print("as a cleric you can choose between a mace or a warhammer (if proficient)")
+    print("you can also choose between scale mail, leather armor, or chain mail (if proficient)")
+    print("you also get a light crossbow and 20 bolts or any simple weapon")
+    print("you also get a priest's pack or an explorer's pack")
+    print("you also get a shield and a holy symbol")
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "mace":
+        print("you have chosen a mace")
+    elif weapon_choice == "warhammer":
+        print("you have chosen a warhammer")
+    else:
+        print("you have chosen a", weapon_choice)
+    armor_choice = input("which armor do you want: ").lower()
+    if armor_choice == "scale mail":
+        print("you have chosen scale mail")
+    elif armor_choice == "leather armor":
+        print("you have chosen leather armor")
+    elif armor_choice == "chain mail":
+        print("you have chosen chain mail")
+    else:
+        print("you have chosen", armor_choice)
+    ranged_weapon_choice = input("which ranged weapon do you want: ").lower()
+    if ranged_weapon_choice == "light crossbow":
+        print("you have chosen a light crossbow and 20 bolts")
+    else:
+        print("you have chosen a", ranged_weapon_choice)
+    pack_choice = input("which pack do you want: ").lower()
+    if pack_choice == "priest's pack":
+        print("you have chosen a priest's pack")
+    elif pack_choice == "explorer's pack":
+        print("you have chosen an explorer's pack")
+    else:
+        print("you have chosen a", pack_choice)
+    print("you also get a shield and a holy symbol")
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "druid":
+    print("as a druid you can choose between a wooden shield or any simple weapon")
+    print("you also get a scimitar or any simple melee weapon")
+    print("you also get leather armor, an explorer's pack, and a druidic focus")
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "wooden shield":
+        print("you have chosen a wooden shield")
+    else:
+        print("you have chosen a", weapon_choice)
+    melee_weapon_choice = input("which melee weapon do you want: ").lower()
+    if melee_weapon_choice == "scimitar":
+        print("you have chosen a scimitar")
+    else:
+        print("you have chosen a", melee_weapon_choice)
+    print("you also get leather armor, an explorer's pack, and a druidic focus")
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "fighter":
+    print("as a fighter you can choose between a chain mail or leather armor, longbow, and 20 arrows")
+    print("you can also choose between a martial weapon and a shield or two martial weapons")
+    print("you also get a light crossbow and 20 bolts or two handaxes")
+    print("you also get a dungeoneer's pack or an explorer's pack")
+    armor_choice = input("which armor do you want: ").lower()
+    if armor_choice == "chain mail":
+        print("you have chosen chain mail")
+    elif armor_choice == "leather armor":
+        print("you have chosen leather armor, a longbow, and 20 arrows")
+    else:
+        print("you have chosen", armor_choice)
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "martial weapon and a shield":
+        print("you have chosen a martial weapon and a shield")
+    elif weapon_choice == "two martial weapons":
+        print("you have chosen two martial weapons")
+    else:
+        print("you have chosen", weapon_choice)
+    ranged_weapon_choice = input("which ranged weapon do you want: ").lower()
+    if ranged_weapon_choice == "light crossbow":
+        print("you have chosen a light crossbow and 20 bolts")
+    elif ranged_weapon_choice == "two handaxes":
+        print("you have chosen two handaxes")
+    else:
+        print("you have chosen", ranged_weapon_choice)
+    pack_choice = input("which pack do you want: ").lower()
+    if pack_choice == "dungeoneer's pack":
+        print("you have chosen a dungeoneer's pack")
+    elif pack_choice == "explorer's pack":
+        print("you have chosen an explorer's pack")
+    else:
+        print("you have chosen a", pack_choice)
+
+#------------------------------------------------------------------------------------
+
+ elif class_choice == "monk":
+    print("as a monk you can choose between a shortsword or any simple weapon")
+    print("you also get a dungeoneer's pack or an explorer's pack")
+    print("you also get 10 darts")
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "shortsword":
+        print("you have chosen a shortsword")
+    else:
+        print("you have chosen a", weapon_choice)
+    pack_choice = input("which pack do you want: ").lower()
+    if pack_choice == "dungeoneer's pack":
+        print("you have chosen a dungeoneer's pack")
+    elif pack_choice == "explorer's pack":
+        print("you have chosen an explorer's pack")
+    else:
+        print("you have chosen a", pack_choice)
+    print("you also get 10 darts")
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "paladin":
+    print("as a paladin you can choose between a martial weapon and a shield or two martial weapons")
+    print("you also get five javelins")
+    print("you also get an explorer's pack and chain mail")
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "martial weapon and a shield":
+        print("you have chosen a martial weapon and a shield")
+    elif weapon_choice == "two martial weapons":
+        print("you have chosen two martial weapons")
+    else:
+        print("you have chosen", weapon_choice)
+    print("you also get five javelins, an explorer's pack, and chain mail")
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "ranger":
+    print("as a ranger you can choose between scale mail or leather armor, a longbow, and 20 arrows")
+    print("you can also choose between a martial weapon and a shield or two martial weapons")
+    print("you also get a dungeoneer's pack or an explorer's pack")
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "martial weapon and a shield":
+        print("you have chosen a martial weapon and a shield")
+    elif weapon_choice == "two martial weapons":
+        print("you have chosen two martial weapons")
+    else:
+        print("you have chosen", weapon_choice)
+    armor_choice = input("which armor do you want: ").lower()
+    if armor_choice == "scale mail":
+        print("you have chosen scale mail")
+    elif armor_choice == "leather armor":
+        print("you have chosen leather armor, a longbow, and 20 arrows")
+    else:
+        print("you have chosen", armor_choice)
+    pack_choice = input("which pack do you want: ").lower()
+    if pack_choice == "dungeoneer's pack":
+        print("you have chosen a dungeoneer's pack")
+    elif pack_choice == "explorer's pack":
+        print("you have chosen an explorer's pack")
+    else:
+        print("you have chosen a", pack_choice)
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "rogue":
+    print("as a rogue you can choose between a rapier, a shortsword, or any simple weapon")
+    print("you also get a burglar's pack, a dungeoneer's pack, or an explorer's pack")
+    print("you also get leather armor, two daggers, and thieves' tools")
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "rapier":
+        print("you have chosen a rapier")
+    elif weapon_choice == "shortsword":
+        print("you have chosen a shortsword")
+    else:
+        print("you have chosen a", weapon_choice)
+    pack_choice = input("which pack do you want: ").lower()
+    if pack_choice == "burglar's pack":
+        print("you have chosen a burglar's pack")
+    elif pack_choice == "dungeoneer's pack":
+        print("you have chosen a dungeoneer's pack")
+    elif pack_choice == "explorer's pack":
+        print("you have chosen an explorer's pack")
+    else:
+        print("you have chosen a", pack_choice)
+    print("you also get leather armor, two daggers, and thieves' tools")
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "sorcerer":
+    print("as a sorcerer you can choose between a light crossbow and 20 bolts or any simple weapon")
+    print("you also get a component pouch or an arcane focus")
+    print("you also get two daggers")
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "light crossbow":
+        print("you have chosen a light crossbow and 20 bolts")
+    else:
+        print("you have chosen a", weapon_choice)
+    focus_choice = input("which focus do you want: ").lower()
+    if focus_choice == "component pouch":
+        print("you have chosen a component pouch")
+    elif focus_choice == "arcane focus":
+        print("you have chosen an arcane focus")
+    else:
+        print("you have chosen a", focus_choice)
+    print("you also get two daggers")
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "warlock":
+    print("as a warlock you can choose between a light crossbow and 20 bolts or any simple weapon")
+    print("you also get a component pouch or an arcane focus")
+    print("you also get leather armor, any simple weapon, and two daggers")
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "light crossbow":
+        print("you have chosen a light crossbow and 20 bolts")
+    else:
+        print("you have chosen a", weapon_choice)
+    focus_choice = input("which focus do you want: ").lower()
+    if focus_choice == "component pouch":
+        print("you have chosen a component pouch")
+    elif focus_choice == "arcane focus":
+        print("you have chosen an arcane focus")
+    else:
+        print("you have chosen a", focus_choice)
+    print("you also get leather armor, any simple weapon, and two daggers")
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "wizard":
+    print("as a wizard you can choose between a quarterstaff or a dagger")
+    print("you also get a component pouch or an arcane focus")
+    print("you also get a scholar's pack or an explorer's pack")
+    print("you also get a spellbook")
+    weapon_choice = input("which weapon do you want: ").lower()
+    if weapon_choice == "quarterstaff":
+        print("you have chosen a quarterstaff")
+    elif weapon_choice == "dagger":
+        print("you have chosen a dagger")
+    else:
+        print("you have chosen a", weapon_choice)
+    focus_choice = input("which focus do you want: ").lower()
+    if focus_choice == "component pouch":
+        print("you have chosen a component pouch")
+    elif focus_choice == "arcane focus":
+        print("you have chosen an arcane focus")
+    else:
+        print("you have chosen a", focus_choice)
+    pack_choice = input("which pack do you want: ").lower()
+    if pack_choice == "scholar's pack":
+        print("you have chosen a scholar's pack")
+    elif pack_choice == "explorer's pack":
+        print("you have chosen an explorer's pack")
+    else:
+        print("you have chosen a", pack_choice)
+    print("you also get a spellbook")
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "skip":
+    print("you have chosen to skip equipment selection")
+
 else:
     print("equipment for this class is not yet implemented")
+
+print("-----End of Equipment Selection-----")
+
+print("time to choose your background")
+background_list = ["acolyte", "criminal", "folk hero", "noble", "sage", "soldier", "urchin", "skip"]
+print("choose a background")
+for background in background_list:
+    print(background.capitalize())
+print("--------------------------------")
+selected = False
+while selected == False:
+    background_choice = input("What background would you like to play: ").lower().strip()
+    if background_choice in background_list:
+        print("You have chosen", background_choice.capitalize())
+        selected = True
+    else:
+        print("You have to choose a valid background.")
+if background_choice == "skip":
+    print("you have chosen to skip background selection")
+else:
+    print("you have chosen the", background_choice, "background")
+print("-----End of Background Selection-----")
+
+print("time to choose your name")
+name = input("what is your character's name: ").strip().capitalize()    
+print("your character's name is", name)
+
