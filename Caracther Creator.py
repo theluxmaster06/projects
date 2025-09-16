@@ -549,3 +549,103 @@ print("time to choose your name")
 name = input("what is your character's name: ").strip().capitalize()    
 print("your character's name is", name)
 
+print("time to choose your alignment")
+alignment_list = ["lawful good", "neutral good", "chaotic good", "lawful neutral", "true neutral", "chaotic neutral", "lawful evil", "neutral evil", "chaotic evil"]
+print("choose an alignment")
+for alignment in alignment_list:
+    print(alignment.capitalize())
+print("--------------------------------")
+selected = False
+while selected == False:
+    alignment_choice = input("What alignment would you like to play: ").lower().strip()
+    if alignment_choice in alignment_list:
+        print("You have chosen", alignment_choice.capitalize())
+        selected = True
+    else:
+        print("You have to choose a valid alignment.")
+print("your character's alignment is", alignment_choice)
+
+print("---------------------------------------")
+
+print("time to choose your age")
+age = input("what is your character's age: ").strip()    
+print("your character's age is", age)   
+print("---------------------------------------")
+
+print("time to choose your spells")
+if class_choice in ["bard", "cleric", "druid", "sorcerer", "warlock", "wizard"]:
+    print("you can choose 3 level 1 spells to start with")
+    spell_list = ["acid splash", "blade ward", "chill touch", "dancing lights", "fire bolt", "friends", "light", "mage hand", "mending", "message", "minor illusion", "poison spray", "prestidigitation", "ray of frost", "shocking grasp", "true strike"]
+    for spell in spell_list:
+        print(spell.capitalize())
+    selected_spells = []
+    while len(selected_spells) < 3:
+        spell_choice = input("choose a spell: ").lower().strip()
+        if spell_choice in spell_list and spell_choice not in selected_spells:
+            selected_spells.append(spell_choice)
+            print("you have chosen", spell_choice)
+        elif spell_choice in selected_spells:
+            print("you have already chosen that spell")
+        else:
+            print("that is not a valid spell")
+    print("you have chosen the following spells:")
+    for spell in selected_spells:
+        print(spell.capitalize())
+else:
+    print("your class does not have any spells to choose from")
+print("-----End of Spells Selection-----")
+
+# inspiration from: https://github.com/github-copilot/code_referencing?cursor=252a579ed86acb3fd19a9b01d81952a2,c709745cbb3bc0158fb58ed949a3ef9a,f8ae8058cb63257292a9437379552279
+
+print("---------------------------------------")
+print("")
+
+print("time to choose your character's appearance")
+hair_color = input("what is your character's hair color: ").strip().capitalize()    
+eye_color = input("what is your character's eye color: ").strip().capitalize()  
+height = input("what is your character's height: ").strip().capitalize()  
+weight = input("what is your character's weight: ").strip().capitalize()
+sex = input("what is your character's sex: ").strip().capitalize()
+print("your character's appearance is as follows:")
+print("hair color:", hair_color)
+print("eye color:", eye_color)  
+print("height:", height)
+print("weight:", weight)
+
+print("character creation complete!")
+print("-----Final Caracther Summary-----")
+print(f"name: {name}")   
+print(f"age: {age}")
+print(f"weight: {weight}")
+print(f"eye color: {eye_color}")
+
+print(f"hair color: {hair_color}")
+
+print(f"class: {class_choice}")
+
+print(f"race: {race_choice}")
+
+print(f"alignment: {alignment_choice}")
+
+print(f"background: {background_choice}")
+
+print(f"stats: {stats}")
+
+print(f"hit points: {hit_points}")
+try: 
+    print(f"spells: {selected_spells}")
+
+except:
+    print("spells: none")
+
+try:
+    print(f"equipment: {weapon_choice} {armor_choice} {pack_choice}")
+
+except:
+    print(f"equipment: {weapon_choice} {pack_choice}")
+
+print("-----End of Summary-----")
+
+print("good luck on your adventures!")
+
+#------------------------------------------------------------------------------------

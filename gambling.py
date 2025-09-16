@@ -38,3 +38,7 @@ while True:
                 print("you sold your house and got 1,000,000")
                 money += 1000000
                 print("you now have", money)
+
+            else:
+                print("ok, bye")
+                exit()
