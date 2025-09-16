@@ -4,16 +4,16 @@ print("-----DnD Caracther Creator-----")
 print("choose a race")
 
 for race in race_list:
-    print(race)
+    print(race.capitalize())
 
 print("--------------------------------")
 selected = False
 
 while selected == False:
 
-    race_choice = input("What race would you like to play: ").lower()
+    race_choice = input("What race would you like to play: ").lower().strip()
     if race_choice in race_list:
-        print("You have chosen", race_choice)
+        print("You have chosen", race_choice.capitalize())
         selected = True
     else:
         print("You have to choose a valid race.")
@@ -32,9 +32,9 @@ print("--------------------------------")
 
 while selected == False:
 
-    class_choice = input("What class would you like to play: ").lower()
+    class_choice = input("What class would you like to play: ").lower().strip()
     if class_choice in class_list:
-        print("You have chosen", class_choice)
+        print("You have chosen", class_choice.capitalize())
         selected = True
     else:
         print("You have to choose a valid class.")
@@ -42,44 +42,8 @@ while selected == False:
 print("race:", race_choice)
 print("class", class_choice)
 
-if class_choice == "monk":
-    print("---monk---")
+print("---{race_choice}---")
 
-elif class_choice == "bard":
-    print("---bard---")
-
-elif class_choice == "cleric":
-    print("---cleric---")
-
-elif class_choice == "druid":
-    print("---druid---")
-
-elif class_choice == "fighter":
-    print("---fighter---")
-
-elif class_choice == "paladin":
-    print("---paladin---")
-
-elif class_choice == "ranger":
-    print("---ranger---")
-
-elif class_choice == "rouge":
-    print("---rouge---")
-
-elif class_choice == "sorcerer":
-    print("---sorcerer---")
-
-elif class_choice == "warlock":
-    print("---warlock---")
-
-elif class_choice == "wizard":
-    print("---wizard---")   
-
-elif class_choice == "barbarian":
-    print("---barbarian---")
-
-else:
-    print("choosen class not found")
 
 print("time to choose your stats")
 
@@ -109,8 +73,8 @@ while point > 0:
         else:
             stats[stat_choice] += increase
             point -= increase
-            print(stat_choice, "has been increased to", stats[stat_choice])
-            print("you have", point, "points left to spend")
+            print(f"{stat_choice}has been increased to {stats[stat_choice]}")
+            print(f"you have {point} points left to spend")
     else:
         print("that is not a valid stat")
 print("you have spent all your points")
