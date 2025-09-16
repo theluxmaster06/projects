@@ -158,6 +158,10 @@ elif race_choice == "orc":
 else:
     print("ur race does not have any stat bonuses")
 
+
+# -------------[hitpoints]-----------------
+print("time to calculate your hit points")
+
 if class_choice == "barbarian":
     hit_points = 12 + (stats["constitution"] - 10) // 2
     print("as a barbarian you have", hit_points, "hit points")
@@ -356,7 +360,7 @@ elif class_choice == "fighter":
 
 #------------------------------------------------------------------------------------
 
- elif class_choice == "monk":
+elif class_choice == "monk":
     print("as a monk you can choose between a shortsword or any simple weapon")
     print("you also get a dungeoneer's pack or an explorer's pack")
     print("you also get 10 darts")
