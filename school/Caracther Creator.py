@@ -63,8 +63,11 @@ stats = {
 }
 
 print("you have", point, "points to spend")
+print("you can increase a stat by 1-5 points at a time")
+print("you can only increase a stat to a maximum of 15")
 for stat, value in stats.items():
     print(stat, ":", value)
+print("---------------------------------------")
 while point > 0:
     stat_choice = input("which stat do you want to increase: ").lower()
     if stat_choice in stats:
@@ -170,6 +173,8 @@ else:
 for stat, value in stats.items():
         print(stat, ":", value)
 
+print( )
+print("---------------------------------------")
 # -------------[hitpoints]-----------------
 print("time to calculate your hit points")
 
@@ -560,6 +565,10 @@ print("time to choose your name")
 name = input("what is your character's name: ").strip().capitalize()    
 print("your character's name is", name)
 
+#---------------------------------------
+
+print("---------------------------------------")
+
 print("time to choose your alignment")
 alignment_list = ["lawful good", "neutral good", "chaotic good", "lawful neutral", "true neutral", "chaotic neutral", "lawful evil", "neutral evil", "chaotic evil"]
 print("choose an alignment")
@@ -582,6 +591,8 @@ print("time to choose your age")
 age = input("what is your character's age: ").strip()    
 print("your character's age is", age)   
 print("---------------------------------------")
+
+#-----------[spell selection]-----------------
 
 print("time to choose your spells")
 if class_choice in ["bard", "cleric", "druid", "sorcerer", "warlock", "wizard"]:
@@ -618,10 +629,24 @@ height = input("what is your character's height: ").strip().capitalize()
 weight = input("what is your character's weight: ").strip().capitalize()
 sex = input("what is your character's sex: ").strip().capitalize()
 print("your character's appearance is as follows:")
+
+print("---------------------------------------")
+
 print("hair color:", hair_color)
+
+print("---------------------------------------")
+
 print("eye color:", eye_color)  
+
+print("---------------------------------------")
+
 print("height:", height)
+
+print("---------------------------------------")
+
 print("weight:", weight)
+
+print("---------------------------------------")
 
 print("character creation complete!")
 print("-----Final Caracther Summary-----")
@@ -649,11 +674,11 @@ try:
 except:
     print("spells: none")
 
-try:
-    print(f"equipment: {weapon_choice} {armor_choice} {pack_choice}")
 
-except:
-    print(f"equipment: {weapon_choice} {pack_choice}")
+print(f"equipment: {weapon_choice}, {armor_choice}, {ranged_weapon_choice}, {pack_choice}, {focus_choice}").capitalize()
+
+print( )
+
 
 print("-----End of Summary-----")
 
