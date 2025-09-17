@@ -648,24 +648,283 @@ print("weight:", weight)
 
 print("---------------------------------------")
 
+print("-----------[skill selection]-----------------")
+
+print("time to choose your skills")
+if class_choice == "barbarian":
+    print("you can choose two skills from the following list:")
+    skill_list = ["animal handling", "athletics", "intimidation", "nature", "perception", "survival"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 2:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------        
+
+elif class_choice == "bard":
+    print("you can choose three skills from the following list:")
+    skill_list = ["acrobatics", "animal handling", "arcana", "athletics", "deception", "history", "insight", "intimidation", "investigation", "medicine", "nature", "perception", "performance", "persuasion", "religion", "sleight of hand", "stealth", "survival"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 3:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------        
+
+elif class_choice == "cleric":
+    print("you can choose two skills from the following list:")
+    skill_list = ["history", "insight", "medicine", "persuasion", "religion"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 2:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "druid":
+    print("you can choose two skills from the following list:")
+    skill_list = ["arcana", "animal handling", "insight", "medicine", "nature", "perception", "religion", "survival"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 2:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "fighter":
+    print("you can choose two skills from the following list:")
+    skill_list = ["acrobatics", "animal handling", "athletics", "history", "insight", "intimidation", "perception", "survival"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 2:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "monk":
+    print("you can choose two skills from the following list:")
+    skill_list = ["acrobatics", "athletics", "history", "insight", "religion", "stealth"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 2:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "paladin":
+    print("you can choose two skills from the following list:")
+    skill_list = ["athletics", "insight", "intimidation", "medicine", "persuasion", "religion"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 2:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "ranger":
+    print("you can choose three skills from the following list:")
+    skill_list = ["animal handling", "athletics", "insight", "investigation", "nature", "perception", "stealth", "survival"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 3:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "rogue":
+    print("you can choose four skills from the following list:")
+    skill_list = ["acrobatics", "athletics", "deception", "insight", "intimidation", "investigation", "perception", "performance", "persuasion", "sleight of hand", "stealth"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 4:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "sorcerer":
+    print("you can choose two skills from the following list:")
+    skill_list = ["arcana", "deception", "insight", "intimidation", "persuasion", "religion"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 2:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "warlock":
+    print("you can choose two skills from the following list:")
+    skill_list = ["arcana", "deception", "history", "intimidation", "investigation", "nature", "religion"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 2:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "wizard":
+    print("you can choose two skills from the following list:")
+    skill_list = ["arcana", "history", "insight", "investigation", "medicine", "religion"]
+    for skill in skill_list:
+        print(skill.capitalize())
+    selected_skills = []
+    while len(selected_skills) < 2:
+        skill_choice = input("choose a skill: ").lower().strip()
+        if skill_choice in skill_list and skill_choice not in selected_skills:
+            selected_skills.append(skill_choice)
+            print("you have chosen", skill_choice)
+        elif skill_choice in selected_skills:
+            print("you have already chosen that skill")
+        else:
+            print("that is not a valid skill")
+    print("you have chosen the following skills:")
+    for skill in selected_skills:
+        print(skill.capitalize())
+
+#------------------------------------------------------------------------------------
+
+elif class_choice == "skip":
+    print("you have chosen to skip skill selection")
+
+else:
+    print("skill selection for this class is not yet implemented")
+
+print("-----End of Skill Selection-----")
+
+#------------------------------------------------------------------------------------
+
+
+
+
 print("character creation complete!")
 print("-----Final Caracther Summary-----")
-print(f"name: {name}")   
-print(f"age: {age}")
-print(f"weight: {weight}")
-print(f"eye color: {eye_color}")
-
-print(f"hair color: {hair_color}")
-
-print(f"class: {class_choice}")
+print( )
 
 print(f"race: {race_choice}")
 
 print(f"alignment: {alignment_choice}")
 
 print(f"background: {background_choice}")
-
-print(f"stats: {stats}")
 
 print(f"hit points: {hit_points}")
 try: 
@@ -674,8 +933,50 @@ try:
 except:
     print("spells: none")
 
+#-------------------------------------
+thisdict = {
+  "name": name,
+  "age": age,
+  "weight": weight,
+  "eye color": eye_color,
+  "hair color": hair_color,
+  "class": class_choice
+}
 
-print(f"equipment: {weapon_choice}, {armor_choice}, {ranged_weapon_choice}, {pack_choice}, {focus_choice}").capitalize()
+#-------------------------------------
+
+thisdict = {
+    "weapon":
+    "armor":
+    "ranged weapon":
+    "pack":
+    "focus":
+}
+
+thisdict["weapon"] = weapon_choice
+thisdict["armor"] = armor_choice
+thisdict["ranged weapon"] = ranged_weapon_choice
+thisdict["pack"] = pack_choice
+thisdict["focus"] = focus_choice
+
+#-------------------------------------
+
+thisdict = {
+    "strength": stats["strength"],
+    "dexterity": stats["dexterity"],
+    "constitution": stats["constitution"],
+    "intelligence": stats["intelligence"],
+    "wisdom": stats["wisdom"],
+    "charisma": stats["charisma"]
+}
+
+#-------------------------------------
+# printing the dictionary in a more readable way
+
+for x in thisdict:
+  if thisdict[x]:
+    print(f"{x} is {thisdict[x]}".capitalize()) 
+
 
 print( )
 
