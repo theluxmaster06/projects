@@ -991,25 +991,14 @@ print("good luck on your adventures!")
 
 #---------------------------------------------
 
-
-
 # thanks for looking at my code!
 
 # if you have any suggestions for improvements, please let me know!
 
-
-
-
 # thanks vai-tv <3 for helping me with making the code better!
-
-
-
 
 # thanks to GitHub Copilot for helping me with some parts of the code!
 
 # thanks to DnD Beyond and Roll20 for helping me with the rules and stuff!
-
-
-# thanks to ChatGPT for helping me with some parts of the structure!
 
 # thanks to Stack Overflow for helping me with some parts of the code!
