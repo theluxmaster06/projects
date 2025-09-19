@@ -1002,3 +1002,5 @@ print("good luck on your adventures!")
 # thanks to DnD Beyond and Roll20 for helping me with the rules and stuff!
 
 # thanks to Stack Overflow for helping me with some parts of the code!
+
+# wow
