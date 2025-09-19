@@ -1004,3 +1004,5 @@ print("good luck on your adventures!")
 # thanks to Stack Overflow for helping me with some parts of the code!
 
 # wow
+
+# made by theluxmaster06
