@@ -945,19 +945,24 @@ thisdict = {
 
 #-------------------------------------
 
-thisdict = {
-    "weapon":
-    "armor":
-    "ranged weapon":
-    "pack":
-    "focus":
-}
-
 thisdict["weapon"] = weapon_choice
 thisdict["armor"] = armor_choice
 thisdict["ranged weapon"] = ranged_weapon_choice
 thisdict["pack"] = pack_choice
 thisdict["focus"] = focus_choice
+# -------------------------------------
+# not sure if this is needed?
+
+#--------------------------------------
+
+thisdict = {
+    "armor": armor_choice,
+    "weapon": weapon_choice,
+    "ranged weapon": ranged_weapon_choice,
+    "pack": pack_choice,
+    "focus": focus_choice
+}
+
 
 #-------------------------------------
 
