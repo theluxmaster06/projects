@@ -14,8 +14,4 @@ while running:
     pygame.display.flip()
 pygame.quit()
 
-# made by theluxmaster06
-# this is a side project game in python with pygame
-
-# this is a work in progress
-# i will add more features later
+# This is a simple Pygame window that runs until closed by the user.

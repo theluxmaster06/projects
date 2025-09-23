@@ -1,3 +1,4 @@
+import json
 #-----------[race selection]-----------------
 
 race_list = ["human", "elf", "dwarf", "tiefling", "aasimar", "dragonborn", "gnome", "halfling", "goliath", "orc", "skip"]
@@ -914,7 +915,7 @@ print("-----End of Skill Selection-----")
 #------------------------------------------------------------------------------------
 
 
-
+#-----------------------[summary]--------------------------
 
 print("character creation complete!")
 print("-----Final Caracther Summary-----")
@@ -991,23 +992,9 @@ print("-----End of Summary-----")
 print("good luck on your adventures!")
 
 #------------------------------------------------------------------------------------
-
 # inspiration from:DnD Beyond, Roll20, GitHub Copilot, ChatGPT, Stack Overflow, and vai-tv
-
-#---------------------------------------------
-
-# thanks for looking at my code!
-
-# if you have any suggestions for improvements, please let me know!
-
 # thanks vai-tv <3 for helping me with making the code better!
-
 # thanks to GitHub Copilot for helping me with some parts of the code!
-
 # thanks to DnD Beyond and Roll20 for helping me with the rules and stuff!
-
-# thanks to Stack Overflow for helping me with some parts of the code!
-
-# wow
-
 # made by theluxmaster06
+#---------------------------------------------
