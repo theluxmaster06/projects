@@ -1,5 +1,6 @@
 model_choice = input("Enter the model of the car: ")
 
+
 thisdict = {
   "brand": "Ford",
   "model": "",
@@ -12,6 +13,7 @@ for x in thisdict:
     print(f"{x} is {thisdict[x]}")
 
 thisdict["model"] = model_choice
+thisdict["color"] = color
 
 for x in thisdict:
   if thisdict[x]:

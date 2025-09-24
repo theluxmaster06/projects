@@ -914,6 +914,35 @@ print("-----End of Skill Selection-----")
 
 #------------------------------------------------------------------------------------
 
+if class_choice in ["bard", "cleric", "druid", "sorcerer", "warlock", "wizard"]:
+    print("your class has spells")
+else:
+    selected_spells = "N/A"
+    print("your class does not have spells")
+
+if class_choice == "skip":
+    hit_points = "N/A"
+    selected_spells = "N/A"
+    weapon_choice = "N/A"
+    armor_choice = "N/A"
+    ranged_weapon_choice = "N/A"
+    pack_choice = "N/A"
+    focus_choice = "N/A"
+
+if class_choice not in ["fighter", "paladin", "ranger"]:
+    armor_choice = "N/A"
+
+if class_choice not in ["fighter", "cleric", "wizard", "sorcerer", "warlock"]:
+    ranged_weapon_choice = "N/A"
+
+if class_choice not in ["bard", "cleric", "druid", "sorcerer", "warlock", "wizard"]:
+    focus_choice = "N/A"
+
+if class_choice not in ["bard", "cleric", "druid", "monk", "paladin", "ranger", "rogue"]:
+    selected_skills = "N/A"
+#------------------------------------------------------------------------------------
+
+# easter egg
 
 #-----------------------[summary]--------------------------
 
@@ -921,53 +950,56 @@ print("character creation complete!")
 print("-----Final Caracther Summary-----")
 print( )
 
-print(f"race: {race_choice}")
 
-print(f"alignment: {alignment_choice}")
+# isint working for the moment :()
+race_dict = {
+    "race": "",
+    "class": "",
+    "background": "",
+    "alignment": "",
+    "hit_points": "",  
+    "spells": "",
+}
 
-print(f"background: {background_choice}")
-
-print(f"hit points: {hit_points}")
-try: 
-    print(f"spells: {selected_spells}")
-
-except:
-    print("spells: none")
+race_dict["race"] = race_choice
+race_dict["class"] = class_choice
+race_dict["background"] = background_choice
+race_dict["alignment"] = alignment_choice
+race_dict["hit_points"] = hit_points
+race_dict["spells"] = selected_spells
 
 #-------------------------------------
-thisdict = {
+caracther_apperence = {
   "name": name,
   "age": age,
   "weight": weight,
   "eye color": eye_color,
   "hair color": hair_color,
-  "class": class_choice
+    "height": height,
 }
 
 #-------------------------------------
+thisdict = {
+    "weapon": "",
+    "armor": "",
+    "ranged weapon": "",
+    "pack": "",
+    "focus": ""
+}
 
 thisdict["weapon"] = weapon_choice
 thisdict["armor"] = armor_choice
 thisdict["ranged weapon"] = ranged_weapon_choice
 thisdict["pack"] = pack_choice
 thisdict["focus"] = focus_choice
-# -------------------------------------
-# not sure if this is needed?
 
 #--------------------------------------
 
-thisdict = {
-    "armor": armor_choice,
-    "weapon": weapon_choice,
-    "ranged weapon": ranged_weapon_choice,
-    "pack": pack_choice,
-    "focus": focus_choice
-}
 
 
 #-------------------------------------
 
-thisdict = {
+stats_dict = {
     "strength": stats["strength"],
     "dexterity": stats["dexterity"],
     "constitution": stats["constitution"],
@@ -983,9 +1015,32 @@ for x in thisdict:
   if thisdict[x]:
     print(f"{x} is {thisdict[x]}".capitalize()) 
 
+for x in stats_dict:
+  if stats_dict[x]:
+    print(f"{x} is {stats_dict[x]}".capitalize()) 
+
+for x in race_dict:
+  if race_dict[x]:
+    print(f"{x} is {race_dict[x]}".capitalize())
+
+for x in caracther_apperence:
+  if caracther_apperence[x]:
+    print(f"{x} is {caracther_apperence[x]}".capitalize())
+
+#-------------------------------------
+
+
+save_character = input("do you want to save your character? in json (yes/no): ").lower().strip()
+if save_character == "yes":
+    import json
+    character_data = {
+        stats_dict,
+        thisdict,
+        caracther_apperence,
+        race_dict
+    }
 
 print( )
-
 
 print("-----End of Summary-----")
 
