@@ -70,7 +70,7 @@ for stat, value in stats.items():
     print(stat, ":", value)
 print("---------------------------------------")
 while point > 0:
-    stat_choice = input("which stat do you want to increase: ").lower()
+    stat_choice = input("which stat do you want to increase: ").lower().strip()
     if stat_choice in stats:
         increase = int(input("how much do you want to increase it by (1-5): "))
         if increase < 1 or increase > 5:
@@ -82,8 +82,13 @@ while point > 0:
         else:
             stats[stat_choice] += increase
             point -= increase
+            print("---------------------------------------")
             print(f"{stat_choice}has been increased to {stats[stat_choice]}")
             print(f"you have {point} points left to spend")
+            print("---------------------------------------")
+            print("your stats are now:")
+            for stat, value in stats.items():
+                print(stat, ":", value)
     else:
         print("that is not a valid stat")
 print("you have spent all your points")
@@ -950,14 +955,13 @@ print("character creation complete!")
 print("-----Final Caracther Summary-----")
 print( )
 
-
 # isint working for the moment :()
 race_dict = {
     "race": "",
     "class": "",
     "background": "",
     "alignment": "",
-    "hit_points": "",  
+    "hit_points": "", 
     "spells": "",
 }
 
@@ -980,24 +984,39 @@ caracther_apperence = {
 
 #-------------------------------------
 thisdict = {
+
     "weapon": "",
     "armor": "",
     "ranged weapon": "",
     "pack": "",
-    "focus": ""
+    "focus": "",
 }
-
-thisdict["weapon"] = weapon_choice
-thisdict["armor"] = armor_choice
-thisdict["ranged weapon"] = ranged_weapon_choice
-thisdict["pack"] = pack_choice
-thisdict["focus"] = focus_choice
-
-#--------------------------------------
-
-
-
 #-------------------------------------
+if weapon_choice == "N/A":
+    thisdict["weapon"] = "N/A"  
+else:
+    thisdict["weapon"] = weapon_choice
+#------------------------------------
+if armor_choice == "N/A":
+    thisdict["armor"] = "N/A"   
+else:
+    thisdict["armor"] = armor_choice
+# ------------------------------------
+if ranged_weapon_choice == "N/A":
+    thisdict["ranged weapon"] = "N/A"
+else:
+    thisdict["ranged weapon"] = ranged_weapon_choice
+#--------------------------------------
+if pack_choice == "N/A":
+    thisdict["pack"] = "N/A"
+else:
+    thisdict["pack"] = pack_choice
+#--------------------------------------
+if focus_choice == "N/A":
+    thisdict["focus"] = "N/A"
+else:
+    thisdict["focus"] = focus_choice
+#--------------------------------------
 
 stats_dict = {
     "strength": stats["strength"],
@@ -1028,7 +1047,6 @@ for x in caracther_apperence:
     print(f"{x} is {caracther_apperence[x]}".capitalize())
 
 #-------------------------------------
-
 
 save_character = input("do you want to save your character? in json (yes/no): ").lower().strip()
 if save_character == "yes":
