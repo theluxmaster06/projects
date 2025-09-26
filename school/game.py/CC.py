@@ -1047,23 +1047,27 @@ for x in race_dict:
   if race_dict[x]:
     print(f"{x} is {race_dict[x]}".capitalize())
 
-for x in caracther_apperence:
-  if caracther_apperence[x]:
-    print(f"{x} is {caracther_apperence[x]}".capitalize())
+for x in caracther_dict:
+  if caracther_dict[x]:
+    print(f"{x} is {caracther_dict[x]}".capitalize())
+print( )
 
 #-------------------------------------
 
 save_character = input("do you want to save your character? in json (yes/no): ").lower().strip()
 if save_character == "yes":
     import json
-    character_data = {
-        stats_dict,
-        thisdict,
-        caracther_apperence,
-        race_dict
-    }
+character_dict = { 
+stats_dict,
+thisdict,
+caracther_dict,
+race_dict
+}
 
-print( )
+
+
+
+
 
 print("-----End of Summary-----")
 
