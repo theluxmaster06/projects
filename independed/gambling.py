@@ -1,10 +1,11 @@
+import random
+
 money = int(input("Enter the amount of money you have: "))
+
 while True:
-
  if money <= 0:
-    print("Invalid amount. Money cannot be zero or negative.")  
-    exit()                                           
-
+  print("Invalid amount. Money cannot be zero or negative.")
+  exit()                                      
 
  elif money > 1000000000: 
     print("You have too much money to gamble. The maximum allowed is 1,000,000,000.")
@@ -22,7 +23,6 @@ while True:
         print("You cannot bet more than you have.")
         exit()
     else:
-        import random
         outcome = random.choice(["win", "lose"])
         if outcome == "win":
             money += bet
@@ -38,3 +38,7 @@ while True:
                 print("you sold your house and got 1,000,000")
                 money += 1000000
                 print("you now have", money)
+
+            else:
+                print("ok, bye")
+                exit()
