@@ -244,7 +244,12 @@ print( )
 print ("race", race_choice)
 print ("class", class_choice)
 print ("stats", stats)
-print ("hit points", hit_points)
+try:
+    print ("hit points", hit_points)
+    
+except:
+    print ("u choose skip so u dont have HP")
+
 print( )
 print("-----End of Summary-----")
 
@@ -973,7 +978,7 @@ race_dict["hit_points"] = hit_points
 race_dict["spells"] = selected_spells
 
 #-------------------------------------
-caracther_apperence = {
+caracther_dict = {
   "name": name,
   "age": age,
   "weight": weight,
