@@ -1057,12 +1057,12 @@ print( )
 save_character = input("do you want to save your character? in json (yes/no): ").lower().strip()
 if save_character == "yes":
     import json
-character_dict = { 
+character_dict = [ 
 stats_dict,
 thisdict,
 caracther_dict,
 race_dict
-}
+]
 
 
 

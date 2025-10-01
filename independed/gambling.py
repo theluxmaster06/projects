@@ -39,6 +39,9 @@ while True:
                 money += 1000000
                 print("you now have", money)
 
+
             else:
                 print("ok, bye")
                 exit()
+    import json
+    

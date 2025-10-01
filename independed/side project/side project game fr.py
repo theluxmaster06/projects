@@ -1,11 +1,11 @@
 import pygame
-
-
+import random
+import time
 
 
 # Main game loop
 print("would u like to start?")
-start = input("yes or no?").lower().strip()
+start = input("yes or no? ").lower().strip()
 if start == ("yes"):
     print ("game starting.")
     print ("game starting..")
@@ -33,5 +33,4 @@ while running:
     screen.fill((0, 0, 0))
     pygame.display.flip()
 pygame.quit()
-
 # This is a simple Pygame window that runs until closed by the user.
