@@ -1057,15 +1057,23 @@ print( )
 save_character = input("do you want to save your character? in json (yes/no): ").lower().strip()
 if save_character == "yes":
     import json
-character_dict = [ 
+
+save_name = input("what do you want to name your save file (without .json): ").strip()
+
+
+character_dict = [
+save_name,
 stats_dict,
 thisdict,
 caracther_dict,
-race_dict
+race_dict,
 ]
 
+input("press enter to save your character as character.json")   
 
-
+with open("character.json", "w") as f:
+    json.dump(character_dict, f, indent=4)
+    print("character saved as character.json")
 
 
 
