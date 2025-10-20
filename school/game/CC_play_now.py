@@ -25,6 +25,11 @@ while selected == False:
 
 class_list = ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard", "skip"]
 
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print("---------------------------------------")
 print("-----DnD Caracther Creator-----")
 print("choose a class")
 
