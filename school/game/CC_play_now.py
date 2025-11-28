@@ -1022,6 +1022,9 @@ if pack_choice == "N/A":
 else:
     thisdict["pack"] = pack_choice
 #--------------------------------------
+
+
+# i have no idea whats wrogn here but sometihng is wrong :( 
 if focus_choice == "N/A":
     thisdict["focus"] = "N/A"
 else:
