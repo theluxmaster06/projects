@@ -1,6 +1,10 @@
-x = "hei"
+x = "hei."
+
+
 try:
-    print(x)
+    if x == "hei":
+        print(x)
+
 
 except:
     print("An exception occurred")
